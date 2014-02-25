@@ -1,13 +1,8 @@
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2014 Feb 05
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
+" To use this file, copy it to
+"   for Unix and OS/2:  ~/.vimrc
+"   for Amiga:  s:.vimrc
+"   for MS-DOS and Win32:  $VIM\_vimrc
+"   for OpenVMS:  sys$login:.vimrc
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
@@ -21,12 +16,33 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+" History / backup files
 set nobackup
 set nowritebackup
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
+set noswapfile
+set history=50	  " keep 50 lines of command line history
+
+set ruler		  " show the cursor position all the time
+set showcmd		  " display incomplete commands
+set autoindent    " always set autoindenting on
+set copyindent    " copy the previous indentation on autoindenting
+set number        " always show line numbers
+set shiftwidth=2  " number of spaces to use for autoindenting
+set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
+set showmatch     " set show matching parenthesis
+
+" Search
+set ignorecase    " ignore case when searching
+set smartcase     " ignore case if search pattern is all lowercase, case-sensitive otherwise
+set hlsearch      " highlight search terms
+set incsearch     " show search matches as you type
+
+" Tabs
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab      " insert tabs on the start of a line according to shiftwidth, not tabstop
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -34,16 +50,10 @@ set incsearch		" do incremental searching
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
-" Solarlized color scheme
+" Color scheme
 syntax enable
 set background=dark
 colorscheme solarized
-
-" Tabs
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
