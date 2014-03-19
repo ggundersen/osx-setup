@@ -17,9 +17,10 @@ set nocompatible
 set backspace=indent,eol,start
 
 " History / backup files
-set nobackup
-set nowritebackup
-set noswapfile
+set backupdir=~/tmp
+"set nobackup
+"set nowritebackup
+"set noswapfile
 set history=50	  " keep 50 lines of command line history
 
 set ruler		  " show the cursor position all the time
@@ -53,7 +54,7 @@ map Q gq
 " Color scheme
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme ir_black
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
