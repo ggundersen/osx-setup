@@ -7,8 +7,11 @@
 	co = checkout
 	cob = checkout -b
 	plog = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
-	rshard = reset HEAD --hard
 	st = status
+	pl = pull
+	ps = push
+	psb = push -u origin
+	un = reset HEAD --
 
 [user]
 	email = ggundersen@gmail.com
