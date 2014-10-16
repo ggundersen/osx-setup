@@ -9,3 +9,7 @@
 	plog = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
 	rshard = reset HEAD --hard
 	st = status
+
+[user]
+	email = ggundersen@gmail.com
+	name = Gregory Gundersen
