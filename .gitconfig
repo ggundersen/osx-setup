@@ -1,5 +1,7 @@
 [alias]
 	aa = add --all
+	b = branch
+	ba = branch -a
 	cm = commit -m
 	cam = commit --amend -m
 	co = checkout
