@@ -53,8 +53,7 @@ map Q gq
 
 " Color scheme
 syntax enable
-set background=dark
-colorscheme ir_black
+colorscheme monokai
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
