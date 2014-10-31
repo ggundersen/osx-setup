@@ -39,7 +39,7 @@ set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
 
 " Tabs
-set smartindent
+set cindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
