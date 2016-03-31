@@ -11,6 +11,9 @@ export -f cl
 function dockerclean { docker rmi -f $(docker images -f dangling=true -q); }
 export -f dockerclean
 
+function weather { curl -4 http://wttr.in/New_York; }
+export -f weather
+
 export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Setting PATH for Python 3.4
