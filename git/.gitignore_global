@@ -1,0 +1,8 @@
+# Vim temp files
+*.swp
+
+# OSX
+.DS_Store 
+
+# IntellJ
+.idea/
