@@ -1,5 +1,9 @@
+# Place in your home directory. See:
+# https://help.github.com/articles/ignoring-files/
+
 # Vim temp files
 *.swp
+*.swo
 
 # OSX
 .DS_Store 
