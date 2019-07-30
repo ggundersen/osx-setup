@@ -19,3 +19,8 @@ export -f st
 # Terminal colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+
+function env-rm () 
+{ 
+    conda env remove --yes --quiet --name "$1"
+}
